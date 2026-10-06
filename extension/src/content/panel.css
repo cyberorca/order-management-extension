@@ -1,0 +1,31 @@
+#ome-panel{position:fixed;top:72px;right:12px;width:300px;max-height:calc(100vh - 96px);overflow:auto;z-index:2147483000;
+  background:#fff;color:#1d2321;border:1px solid #cfd6d2;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.14);
+  font:13px/1.45 "Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){#ome-panel{background:#1e2423;color:#e6ebe8;border-color:#35403c}}
+#ome-panel .ome-head{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;border-bottom:1px solid rgba(128,128,128,.25)}
+#ome-panel .ome-order{font-family:Consolas,Menlo,monospace;font-size:11px;opacity:.75}
+#ome-banners:empty{display:none}
+#ome-panel .ome-banner{padding:6px 10px;font-size:12px}
+#ome-panel .ome-banner-warn{background:#fff3c4;color:#5a4a00}
+#ome-panel .ome-banner-error,#ome-panel .ome-banner-conflict,#ome-panel .ome-banner-offline{background:#fde3e1;color:#7a2420}
+#ome-panel .ome-banner-lock,#ome-panel .ome-banner-signin{background:#e6ecfb;color:#1f3a7a}
+#ome-panel .ome-banner-action{margin-left:6px;font:inherit;font-weight:600;border:1px solid currentColor;background:transparent;
+  color:inherit;border-radius:4px;padding:0 8px;cursor:pointer}
+#ome-panel .ome-hint{padding:6px 10px;font-size:12px;background:rgba(15,107,92,.12)}
+#ome-view{padding:6px 10px}
+#ome-panel .ome-empty{opacity:.6;font-style:italic}
+#ome-panel .ome-wearer{font-weight:700;margin-top:8px;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:#0f6b5c}
+#ome-panel .ome-unassigned{opacity:.6}
+#ome-panel .ome-line{padding:2px 0;font-size:12px}
+#ome-panel .ome-child{padding-left:16px}
+#ome-panel .ome-child::before{content:"\2514\2500 ";opacity:.6}
+#ome-panel .ome-orphan{opacity:.55;text-decoration:line-through}
+#ome-panel .ome-line-id{font-family:Consolas,Menlo,monospace;font-size:11px;opacity:.7}
+#ome-panel .ome-tag{margin-left:6px;font-size:10px;padding:0 4px;border-radius:3px;background:rgba(200,80,60,.15)}
+#ome-panel .ome-note-text{margin:2px 0 4px 22px;font-size:11px;font-style:italic;opacity:.8;white-space:pre-wrap}
+#ome-panel .ome-foot{display:flex;justify-content:space-between;padding:6px 10px;font-size:11px;opacity:.7;border-top:1px solid rgba(128,128,128,.25)}
+.ome-cellbtn{display:block;width:100%;margin-top:3px;font:11px system-ui;padding:2px 6px;border-radius:3px;border:1px solid #0f6b5c;
+  background:#0f6b5c;color:#fff;cursor:pointer}
+tr.ome-linkmode{outline:2px dashed #0f6b5c}
+#ome-health-warning{position:fixed;bottom:12px;right:12px;z-index:2147483000;max-width:340px;padding:8px 12px;border-radius:6px;
+  background:#fff3c4;color:#5a4a00;border:1px solid #e0c96a;font:12px/1.4 system-ui,sans-serif;box-shadow:0 2px 10px rgba(0,0,0,.15)}

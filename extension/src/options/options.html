@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Order Links sign-in</title>
+<style>
+  body{font:14px/1.5 system-ui,sans-serif;margin:24px;max-width:380px;color:#1d2321}
+  label{display:block;margin:12px 0 4px;font-weight:600}
+  input{width:100%;box-sizing:border-box;padding:6px 8px;font:inherit}
+  button{margin-top:16px;padding:6px 14px;font:inherit}
+  #msg{margin-top:12px;min-height:1.5em}
+  .ok{color:#1f7a4d}.err{color:#b3261e}
+  p.small{color:#5d6864;font-size:12px}
+</style></head>
+<body>
+<h1>Order Links</h1>
+<p class="small">Sign in with your staff account. You stay signed in until the browser closes or the session expires.</p>
+<form id="form">
+  <label for="username">Username</label><input id="username" autocomplete="username" required>
+  <label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required>
+  <button type="submit">Sign in</button> <button type="button" id="logout">Sign out</button>
+</form>
+<div id="msg" role="status"></div>
+<script src="options.js"></script>
+</body></html>
